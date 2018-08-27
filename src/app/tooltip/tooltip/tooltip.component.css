@@ -1,0 +1,6 @@
+.my-tootip{
+  background-color: rgba(0,0,0,0.5);
+  padding: 5px;
+  position: absolute;
+  white-space: nowrap;
+}

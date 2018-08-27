@@ -1,0 +1,8 @@
+.tooltip-wrap{
+  height: 300px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
