@@ -1,6 +1,5 @@
 import { SlideComponent } from './../slide/slide.component';
 import { Component, OnInit, Input, AfterViewInit, HostListener } from '@angular/core';
-import { start } from 'repl';
 
 @Component({
   selector: 'app-carousel',
