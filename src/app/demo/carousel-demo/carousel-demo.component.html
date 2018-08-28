@@ -1,0 +1,22 @@
+<div>
+  <input type="checkbox" [(ngModel)]="noWrapSlides"/> 是否允许循环
+</div>
+<div>
+    <input type="checkbox" [(ngModel)]="noPause"/> 是否允许hover的时候停止播放
+  </div>
+  <div>
+      <input type="text" [(ngModel)]="interval" placeholder="设置轮播的时间"/>
+  </div>
+<div class="carousel-demo-wrap">
+<app-carousel [noWrap]="noWrapSlides" [noPause]="noPause" [interval]= "interval">
+  <app-slide>
+    <div class="slide-component">slide-1</div>
+  </app-slide>
+  <app-slide>
+    <div class="slide-component">slide-2</div>
+  </app-slide>
+  <app-slide>
+    <div class="slide-component">slide-3</div>
+  </app-slide>
+</app-carousel>
+</div>

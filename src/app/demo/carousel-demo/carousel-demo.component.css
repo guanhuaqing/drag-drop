@@ -1,0 +1,9 @@
+.carousel-demo-wrap{
+  width: 200px;
+  height: 200px;
+}
+.slide-component{
+width: 200px;
+height: 200px;
+background-color: rgba(0,0,0,.3);
+}

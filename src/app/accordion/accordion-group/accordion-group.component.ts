@@ -17,7 +17,7 @@ export class AccordionGroupComponent implements OnInit, OnDestroy {
   @Input() get isOpen() {
     return this._isopen;
   }
-  @Input()  set isOpen(value) {
+  set isOpen(value) {
     if (value !== this.isOpen) {
       if (value) {
         this.accordition.closeOtherPanles(this);

@@ -1,0 +1,14 @@
+<div class="carousel-wrap">
+    <ng-content>
+    </ng-content>
+    <div class="carousel-previous">
+        <span (click)="previousSlide()"></span>
+    </div>
+    <div class="carousel-next" *ngIf="slides.length > 1">
+        <span (click)="nextSlide()"></span>
+    </div>
+    <div class="bottom-selector" *ngIf="slides.length > 1">
+      <div *ngFor="let slide of slides,let i = index" (click)="selectSlide(i)" class="selector-dot" [class.active] = "currentIndex==i"></div>
+    </div>
+</div>
+

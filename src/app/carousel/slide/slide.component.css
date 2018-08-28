@@ -1,0 +1,12 @@
+.carousel-item{
+  position: relative;
+  display: none;
+  align-items: center;
+  width: 100%;
+  transition:  .6s ease;
+  backface-visibility: hidden;
+  -webkit-perspective: 100px;
+}
+.active{
+  display: block !important;
+}

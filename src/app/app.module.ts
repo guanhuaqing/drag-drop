@@ -9,12 +9,15 @@ import {DragModule} from './draggable/drag.module';
 import {TooltipModule} from './tooltip/tooltip.module';
 import { AccordionDemoComponent } from './demo/accordion-demo/accordion-demo.component';
 import {AccordionModule} from './Accordion/Accordion.module';
+import { CarouselDemoComponent } from './demo/carousel-demo/carousel-demo.component';
+import { CarouselModule } from './carousel/carousel.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AccordionDemoComponent
+    AccordionDemoComponent,
+    CarouselDemoComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +26,7 @@ import {AccordionModule} from './Accordion/Accordion.module';
     DragModule,
     TooltipModule,
     AccordionModule,
+    CarouselModule,
     AppRoutingModule
   ],
   providers: [],

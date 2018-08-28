@@ -4,6 +4,7 @@ import { Router, RouterModule, Routes } from '@angular/router';
 import { DragDemoComponent } from './draggable/drag-demo/drag-demo.component';
 import { AccordionDemoComponent } from './demo/accordion-demo/accordion-demo.component';
 import { TooltipDemoComponent } from './tooltip/tooltip-demo/tooltip-demo.component';
+import { CarouselDemoComponent } from './demo/carousel-demo/carousel-demo.component';
 
 const routes: Routes = [
 
@@ -20,6 +21,9 @@ const routes: Routes = [
   }, {
     path: 'accordion',
     component: AccordionDemoComponent
+  }, {
+    path: 'carousel',
+    component: CarouselDemoComponent
   }
 ];
 
