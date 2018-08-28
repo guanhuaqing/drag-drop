@@ -1,0 +1,17 @@
+<div>
+  <input type="checkbox" [(ngModel)]="isFirstDisabled"/> 让第一个不可以点击
+</div>
+<div>
+  <input type="checkbox" [(ngModel)]="oneAtATime" /> 是否只允许一次打开一个
+</div>
+<app-accordion [closeOthers]="oneAtATime">
+  <app-accordion-group heading="First Accordion" [isDisabled]="isFirstDisabled">
+    <p> The first accordion!!</p>
+  </app-accordion-group>
+  <app-accordion-group heading="Second Accordion" [isOpen]="isSecondOpen">
+    <p> The second accordion!!</p>
+  </app-accordion-group>
+  <app-accordion-group heading="Third Accordion">
+    <p> The third accordion!!</p>
+  </app-accordion-group>
+</app-accordion>

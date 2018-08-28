@@ -1,0 +1,8 @@
+<div class="accordion-body">
+  <div class="accordion-heading" (click)="toggle($event)" [class.text-muted]="isDisabled">{{heading}}
+      <ng-content select="[accordion-heading]"></ng-content>
+  </div>
+  <div class="accordion-content" *ngIf="isOpen">
+    <ng-content></ng-content>
+  </div>
+</div>

@@ -7,11 +7,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import {DragModule} from './draggable/drag.module';
 import {TooltipModule} from './tooltip/tooltip.module';
+import { AccordionDemoComponent } from './demo/accordion-demo/accordion-demo.component';
+import {AccordionModule} from './Accordion/Accordion.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AccordionDemoComponent
   ],
   imports: [
     BrowserModule,
@@ -19,6 +22,7 @@ import {TooltipModule} from './tooltip/tooltip.module';
     HttpModule,
     DragModule,
     TooltipModule,
+    AccordionModule,
     AppRoutingModule
   ],
   providers: [],
