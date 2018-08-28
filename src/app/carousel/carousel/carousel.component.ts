@@ -18,10 +18,10 @@ export class CarouselComponent implements OnInit {
     return this._interval;
   }
   set interval(value) {
-    if (value) {
+    this._interval = +value;
+      console.log(this.interval);
+      this.stop();
       this.startTimer();
-    }
-    this._interval = value;
   }
   constructor() {
     this.noWrap = true;
@@ -31,7 +31,9 @@ export class CarouselComponent implements OnInit {
   ngOnInit() {
   }
   @HostListener('mouseover') stop() {
-    clearInterval(this.timer);
+    if (this.timer) {
+      clearInterval(this.timer);
+    }
   }
   @HostListener('mouseout') start() {
     this.startTimer();

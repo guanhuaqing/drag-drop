@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CarouselDemoComponent implements OnInit {
   noWrapSlides;
   noPause;
-  interval = 1000;
+  interval = 10000;
   constructor() { }
 
   ngOnInit() {
