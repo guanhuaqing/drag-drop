@@ -21,7 +21,7 @@ export class TooltipComponent implements OnInit, AfterViewInit {
    switch (this.config.direction) {
     case 'up':
     this.render.setStyle(content, 'left', (pos.left + (pos.width - contentSize.width) / 2) + 'px');
-    this.render.setStyle(content, 'top', (pos.top - contentSize.height) + 'px');
+    this.render.setStyle(content, 'top', (pos.top - contentSize.height - 5) + 'px');
     break;
     case 'right':
     console.log(pos.right);
@@ -37,7 +37,7 @@ export class TooltipComponent implements OnInit, AfterViewInit {
     break;
     default:
     this.render.setStyle(content, 'left', (pos.left + (pos.width - contentSize.width) / 2) + 'px');
-    this.render.setStyle(content, 'top', (pos.bottom ) + 'px');
+    this.render.setStyle(content, 'top', (pos.bottom + 8 ) + 'px');
     break;
    }
 

@@ -1,1 +1,5 @@
-<div class="my-tootip" [innerHTML]="config.title"></div>
+<div class="my-tootip" >
+  {{config.title}}
+    <div class="trangle" [class.up]="config.direction=='up'" [class.down]="config.direction=='down'" [class.left]="config.direction=='left'" [class.right]="config.direction=='right'"></div>
+</div>
+
