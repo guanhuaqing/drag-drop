@@ -11,13 +11,16 @@ import { AccordionDemoComponent } from './demo/accordion-demo/accordion-demo.com
 import {AccordionModule} from './Accordion/Accordion.module';
 import { CarouselDemoComponent } from './demo/carousel-demo/carousel-demo.component';
 import { CarouselModule } from './carousel/carousel.module';
+import { DropdownDemoComponent } from './demo/dropdown-demo/dropdown-demo.component';
+import { DropdownModule } from './dropdown/dropdown.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     AccordionDemoComponent,
-    CarouselDemoComponent
+    CarouselDemoComponent,
+    DropdownDemoComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,6 +30,7 @@ import { CarouselModule } from './carousel/carousel.module';
     TooltipModule,
     AccordionModule,
     CarouselModule,
+    DropdownModule,
     AppRoutingModule
   ],
   providers: [],

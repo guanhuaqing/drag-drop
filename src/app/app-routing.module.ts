@@ -5,6 +5,7 @@ import { DragDemoComponent } from './draggable/drag-demo/drag-demo.component';
 import { AccordionDemoComponent } from './demo/accordion-demo/accordion-demo.component';
 import { TooltipDemoComponent } from './tooltip/tooltip-demo/tooltip-demo.component';
 import { CarouselDemoComponent } from './demo/carousel-demo/carousel-demo.component';
+import { DropdownDemoComponent } from './demo/dropdown-demo/dropdown-demo.component';
 
 const routes: Routes = [
 
@@ -24,6 +25,9 @@ const routes: Routes = [
   }, {
     path: 'carousel',
     component: CarouselDemoComponent
+  }, {
+    path: 'dropdown',
+    component: DropdownDemoComponent
   }
 ];
 

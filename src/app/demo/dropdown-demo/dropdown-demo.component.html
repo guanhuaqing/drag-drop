@@ -1,0 +1,38 @@
+<div class="dropdown-demo-wrap"  appDropdown #dropdown="my-dropdown" [isDisabled]="disabled">
+  <button appDropdownToggle class="dropdown-demo-toggle-btn">
+    Button dropdown
+    <span class="caret"></span>
+  </button>
+  <ul *appDropdownMenu class="dropdown-demo-list">
+    <li>Action</li>
+    <li>Another action</li>
+    <li>Something else here</li>
+    <li>Separated link</li>
+  </ul>
+</div>
+<button type="button" class="myButton" (click)="dropdown.toggle()">Toggle</button>
+<button type="button" class="myButton" (click)="dropdown.show()">Show</button>
+<button type="button" class="myButton" (click)="dropdown.hide()">Hide</button>
+<input type="checkbox" [(ngModel)]="disabled" />Enable/Disable
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+<div class="dropdown-demo-wrap"  appDropdown  [dropup]="isDropup">
+    <button appDropdownToggle class="button-dropup">
+      Button dropdown
+      <span class="caret"></span>
+    </button>
+    <ul *appDropdownMenu class="dropdown-demo-list">
+      <li>Action</li>
+      <li>Another action</li>
+      <li>Something else here</li>
+      <li>Separated link</li>
+    </ul>
+  </div>
+
